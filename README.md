@@ -40,7 +40,7 @@ Following classes are present in the dataset.
 
 The model architecture used was based on the following architecture.
 
-![Unet Resnet](https.//www.researchgate.net/publication/345841396/figure/fig5/AS.959983546019840@1605889321027/Architecture-of-ResNet-UNet-The-structure-of-the-ResNet-UNet-uses-the-traditional-UNet_W640.jpg)
+![Unet Resnet](unet-resnet.jpg)
 
 ### Results
 
