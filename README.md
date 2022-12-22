@@ -8,42 +8,43 @@ We had toimplement and solve a remote sensing problem using recent deep learning
 
 The task was to design and implement a deep learning model in order to perform the automatic segmentation of such images. The model could be trained using the train images which contain pixel-wise annotations. Using the trained model, a prediction on the test images had to be performed and submitted on the platform. Depending on the performance of the submitted file and the leaderboard you would be ranked accordingly using macro F1 score.
 
-Following classes are present in the dataset:
-0: Background
-1: Property Roof
-2: Secondary Structure
-3: Swimming Pool
-4: Vehicle
-5: Grass
-6: Trees / Shrubs
-7: Solar Panels
-8: Chimney
-9: Street Light
-10: Window
-11: Satellite Antenna
-12: Garbage Bins
-13: Trampoline
-14: Road/Highway
-15: Under Construction / In Progress Status
-16: Power Lines & Cables
-17: Water Tank / Oil Tank
-18: Parking Area - Commercial
-19: Sports Complex / Arena
-20: Industrial Site
-21: Dense Vegetation / Forest
-22: Water Body
-23: Flooded
-24: Boat
+Following classes are present in the dataset.
+
+1. Background
+1. Property Roof
+1. Secondary Structure
+1. Swimming Pool
+1. Vehicle
+1. Grass
+1. Trees / Shrubs
+1. Solar Panels
+1. Chimney
+1. Street Light
+1. Window
+1. Satellite Antenna
+1. Garbage Bins
+1. Trampoline
+1. Road/Highway
+1. Under Construction / In Progress Status
+1. Power Lines & Cables
+1. Water Tank / Oil Tank
+1. Parking Area - Commercial
+1. Sports Complex / Arena
+1. Industrial Site
+1. Dense Vegetation / Forest
+1. Water Body
+1. Flooded
+1. Boat
 
 ### Model
 
-The model architecture used was based on the following architecture:
+The model architecture used was based on the following architecture.
 
-<a href="https://www.researchgate.net/" rel="Unet Resnet">![Unet Resnet](https://www.researchgate.net/publication/345841396/figure/fig5/AS:959983546019840@1605889321027/Architecture-of-ResNet-UNet-The-structure-of-the-ResNet-UNet-uses-the-traditional-UNet_W640.jpg)</a>
+![Unet Resnet](https.//www.researchgate.net/publication/345841396/figure/fig5/AS.959983546019840@1605889321027/Architecture-of-ResNet-UNet-The-structure-of-the-ResNet-UNet-uses-the-traditional-UNet_W640.jpg)
 
 ### Results
 
 Model achieved **71% accuracy** on a train dataset of ~250 images, without using any pre-trained ResNet network inside the Unet network.
 
-The "accuracy" was computed accordingly to the **_Sørensen-Dice Coefficient_**:
+The "accuracy" was computed accordingly to the **_Sørensen-Dice Coefficient_**.
 $$Dice = \frac{2 \mid A \cap B \mid}{\mid A \mid + \mid B \mid}$$
